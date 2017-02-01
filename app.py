@@ -43,7 +43,7 @@ def getNetatmoData(feed):
              author="", url="", id=devList.lastData()['Balcon']['When'],
              updated=when, published=when)
 
-@app.route('/pebble/temperature.atom')
+@app.route('/')
 def generateRSS():
     feed = AtomFeed("Temperature", feed_url=request.url,
         url=request.host_url,
