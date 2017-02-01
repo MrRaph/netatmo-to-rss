@@ -6,7 +6,7 @@ ADD ./requirements.txt /requirements.txt
 ADD ./.netatmo.credentials /root/.netatmo.credentials
 
 RUN pip install -r /requirements.txt && \
-    chmod +x /run.sh
+    chmod +x /run.sh && touch /pyrss2gen.xml
 
 EXPOSE 80
 CMD ["/run.sh"]

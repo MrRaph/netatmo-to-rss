@@ -1,6 +1,5 @@
-apscheduler
 pytz
 requests
 lnetatmo
-PyRSS2Gen
 Flask
+PyRSS2Gen
